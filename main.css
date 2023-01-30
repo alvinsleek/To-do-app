@@ -20,6 +20,9 @@ body {
 	min-height: 100vh;
 	color: #FFF;
 	background-color: var(--dark);
+    background: linear-gradient(to right, #751616, #374151, #ffffff);
+    background-size: 400% 400%;
+    animation: gradient 10s ease infinite;
 }
 
 header {
@@ -154,3 +157,24 @@ main {
 .task .actions .delete {
 	color: crimson;
 }
+footer {
+    
+     text-align: center;
+     background: none;
+     color: var(--grey);
+     padding: 20px 0;
+      
+      
+}
+@keyframes gradient {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+    
+  }
